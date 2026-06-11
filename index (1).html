@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal — Digital Naap</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+    :root {
+      --burgundy: #7A1F1F;
+      --gold: #C9A961;
+      --cream: #F5EFE0;
+      --cream-dark: #EDE4CF;
+      --text: #2C1A1A;
+      --muted: #7A5C5C;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Inter', Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--burgundy);
+      padding: 40px 24px 32px;
+      text-align: center;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .app-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 36px;
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .app-tagline {
+      color: var(--cream);
+      font-size: 13px;
+      letter-spacing: 4px;
+      margin-top: 8px;
+      opacity: 0.8;
+      text-transform: uppercase;
+    }
+
+    .app-subtitle {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 14px;
+      color: var(--gold);
+      margin-top: 6px;
+      opacity: 0.7;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 52px 24px 60px;
+      flex: 1;
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--muted);
+      margin-bottom: 40px;
+      border-left: 3px solid var(--gold);
+      padding-left: 16px;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--cream-dark);
+      border-left: 4px solid var(--burgundy);
+      border-radius: 8px;
+      padding: 22px 24px;
+      text-decoration: none;
+      display: block;
+      transition: border-left-color 0.2s, transform 0.1s;
+    }
+
+    .card:hover {
+      border-left-color: var(--gold);
+      transform: translateX(3px);
+    }
+
+    .card-num {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      color: var(--burgundy);
+      margin-bottom: 6px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .card-arrow {
+      float: right;
+      font-size: 20px;
+      color: var(--gold);
+      margin-top: -26px;
+    }
+
+    .made-by {
+      text-align: center;
+      margin-top: 52px;
+      padding-top: 24px;
+      border-top: 1px solid var(--cream-dark);
+    }
+
+    .made-by p {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      padding: 18px;
+      border-top: 1px solid var(--cream-dark);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">Digital Naap</div>
+  <div class="app-subtitle">دیجیٹل ناپ</div>
+  <div class="app-tagline">Tailor's Digital Register</div>
+</header>
+
+<div class="container">
+  <div class="section-label">Legal Documents</div>
+
+  <p class="intro">
+    Digital Naap is built for tailor shops — keeping your customer records, measurements, and payments organized, privately and locally on your device.
+  </p>
+
+  <div class="cards">
+    <a href="privacy.html" class="card">
+      <div class="card-num">01 · Document</div>
+      <div class="card-title">Privacy Policy</div>
+      <div class="card-desc">How Digital Naap handles your data — short answer: it stays on your device.</div>
+      <div class="card-arrow">→</div>
+    </a>
+
+    <a href="terms.html" class="card">
+      <div class="card-num">02 · Document</div>
+      <div class="card-title">Terms of Service</div>
+      <div class="card-desc">Usage rules and Pro subscription terms — auto-renews monthly, cancel anytime.</div>
+      <div class="card-arrow">→</div>
+    </a>
+  </div>
+
+  <div class="made-by">
+    <p>Published by Muhammad Yahya Aslam LLC · New Mexico, USA</p>
+    <p style="margin-top:6px;">ya987492@gmail.com</p>
+  </div>
+</div>
+
+<footer>
+  © 2026 Muhammad Yahya Aslam LLC — All rights reserved.
+</footer>
+
+</body>
+</html>
